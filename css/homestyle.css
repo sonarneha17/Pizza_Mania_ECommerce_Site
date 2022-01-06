@@ -1,0 +1,23 @@
+<style type="text/css">
+.footer {
+  position: fixed;
+  height: 25%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+h1{
+	background-color: #ff0000;
+}
+.bt{
+	background-color: green;
+
+	left: 5000px;
+	top: 5000px;
+	padding-top: 50px;
+	z-index: 1000;
+}
+</style>

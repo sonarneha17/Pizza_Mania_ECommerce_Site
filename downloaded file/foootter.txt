@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.footer {
+  position: fixed;
+  height: 25%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+h1{
+  background-color: #ff0000;
+}
+.Button{
+  border-radius: 50%;
+ background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  left: 750px;
+  top: 500px;
+ height: 70px;
+}
+</style>
+</head>
+<body bgcolor="grey" background="wall1.jpg">
+	<div class="Button" style="position: absolute;">
+    <input type="Button" name="View deals" value="" onclick="Windows.open()" >
+</div>
+<div class="footer" id="footer">
+  <p>Footer</p>
+  <a href="disclaimer.html">Disclaimer</a>
+</div>
+</body>
+<div class="head1">
+  <h1>Pizza Mania</h1>
+</div>
+
+<center><img class="mySlides" src="pizza3.jpg">
+<img class="mySlides" src="pizza4.jpg">
+<img class="mySlides" src="pizza5.jpg">
+<img class="mySlides" src="pizza6.jpg"></center>
+<script type="text/javascript">
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 6000); // Change image every 2 seconds
+}
+</script>
+
+</html>

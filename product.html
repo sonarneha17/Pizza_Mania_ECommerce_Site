@@ -1,0 +1,989 @@
+<html>
+<head>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+
+   *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  h1{
+    background-position: fixed;
+    background-color: rgb(120,0,20);
+    padding: 0px;
+    padding-bottom: 0px;
+  }
+
+  .header{
+      width: 100%;
+      height: 40px;
+    /*  display: block;*/
+      background-color: rgb(120,0,20);
+  }
+
+  .innerheader{
+
+    width: 1000px;*/
+
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+/*    margin-left: 10px;*/
+  }
+
+ .logoco{
+    height: 100%;
+    display: table; 
+    float: left;
+    margin-right: 20%;
+  }
+  
+.logoco h1
+{
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Buxton Sketch';
+    font-size: 32px;
+    font-weight: 400;
+}
+  
+.logoco h1 span
+{
+    font-weight: 500;
+}
+
+.navigation{
+    float: right;
+    height: 100%;  
+  }
+
+  .navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 35px;
+  }
+  
+  .navigation a:last-child{
+    padding-right: 0;
+  }
+
+  .navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: rgb(120,0,20);
+    font-family: 'Helvetica'
+    font-size:16px;
+  }
+
+  .head{
+    top: 200px;
+  }
+
+  .Button{ 
+    left: 650px;
+    top: 500px;
+    margin: auto;
+    width: 100%;
+    border: 3px solid green;
+    padding: 10px;
+  }
+  
+  .button{
+     left: 100px;
+     top: 100px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+*/
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+
+
+
+  h2{
+		color: white;
+	background-color: rgba(255, 0, 0, 0.8);
+	height: 50px;
+
+}
+	h4
+		font-style: Helvetica;
+		font-size: 20px;
+	}
+
+.bt1 {
+	 position:absolute;
+    left:0; right:0;
+    height: 923px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+.price {
+  color: black;
+  font-size: 22px;
+}
+
+.content button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;c
+}
+
+.content button:hover {
+  opacity: 0.7;
+}
+
+
+
+body {
+  background-color: #f1f1f1;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row {
+  margin: 18
+  px -34px;
+
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 20px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 26.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  padding-left: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 72px;
+  background-color: #666;
+  cursor: pointer;
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
+   
+}
+
+/* The sidepanel menu */
+.sidepanel {
+  height: 450px; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+.a1{
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.innerheader button {
+  position: absolute;
+  left: 1250px;
+  background-color: rgb(120,0,20);
+  color: white;
+  padding: 10px 12px;
+  margin: 0 0 10;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.innerheader button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 10px;
+  margin-left: 90px;
+}
+
+span.psw {
+  float: center;
+  padding-top: 16px;
+}
+
+#b2
+{
+  font-weight: 20px;
+  width: 75px;
+  padding: 6px;
+  background-color: red;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 8px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 70%; /* Full width */
+  height: 100%; /* Full height */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 20%; /* Could be more or less, depending on screen size */
+  align-items: center;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+     margin-top: 10px;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+iframe{
+  position: fixed;
+  left: 1080px;
+  height: 500px;
+  margin-top: 50px;
+  max-height: 400px;
+  width: 260px;
+  border-style:solid black;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2) ;
+
+}
+
+* {box-sizing: border-box}
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.container1 button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+   border-style:solid;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+  align-items: center;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  margin-left: 110px;
+}
+
+.container11 {
+  padding: 16px;
+}
+
+
+/* The Modal (background) */
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 8%;
+  top: 0;
+  width: 55%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+/*
+  padding-right: 20px;
+  padding-left: 100px;
+  padding-top: 50px;*/
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  margin-left: 100px;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+.footer-distributed{
+  background-color: #2c292f;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 25px 50px 9px 10px;
+  margin-top: 50px;
+}
+.footer-distributed .footer-left{
+  width: 30%;
+   display: inline-block;
+  vertical-align: top;
+    width: 30%;
+}
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 0px 0 0px;
+}
+ 
+.footer-distributed .footer-links a{
+  font-family: 'arial';
+  display:inline-block;
+  line-height: 1.2;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 20px 'Cookie', cursive;
+  margin: 0;
+}
+ .footer-distributed h3 span{
+  color:  #e0ac1c;
+}
+
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="innerheader">
+      <div class="logoco">
+          <a href="HOMEPAGE.html">
+        <h1>Pizza<span> Mania</span></h1></a> 
+      </div>
+     <ul class="navigation">
+      <a href="product.html">  <li>OUR MENU  |    </li></a>
+         <a href="offer.html"> <li>SPECIAL OFFER |</li></a>
+         <a href="#">          <li>STORE FINDER  |</li></a>
+         <a href="inside.html"><li>INSIDE MANIA  |</li></a>
+         <a href="conact.html"><li>CONTACT        </li></a>
+         <a href="#">          <li>GIFT CARD     |</li></a>
+         <!--button onclick="document.getElementById('id01').style.display='block'"style="width:auto;" id="b1">Login</button-->
+      </ul>
+    
+  </div>
+
+<div class="a1">
+    <button class="btn active" onclick="filterSelection('all')"> Show all      </button>
+    <button class="btn" onclick="filterSelection('pizza')"> Pizza               </button>
+    <button class="btn" onclick="filterSelection('chese ')"> Non-Veg Pizza      </button>
+    <button class="btn" onclick="filterSelection('chicken')"> Speciality Chicken</button>
+    <button class="btn" onclick="filterSelection('Drinks')"> Drinks             </button>
+</div>
+
+<!-- Pizza Gallery Cardlayout -->
+<!iframe src="cart.html" name="right" id="right" >
+
+<!-- Pizza Gallery Gridlayout -->  
+</iframe>
+<div class="row">
+ <div class="column pizza">
+   <div class="content">
+  <img src="img/pizzaa1.jpg" alt="Denim Jeans" style="width:100%">
+  <h4>Panner Soya Supreme</h4>
+  <p class="price" style="color: black" style="font-size:4">$569</p>
+  <p style="color: #C0C0C0">Paneer,Masala Soya Chunk,Green
+  Capsicum,onion,red paprika</p>
+  <p><button>Add to Cart</button></p>
+</div>
+  </div>
+  <div class="column pizza">
+    <div class="content">
+  <img src="img/pizzaa2.jpg" alt="Denim Jeans" style="width:100%">
+  <h4>Veg Exotica</h4>
+  <p class="price">$569</p>
+  <p style="color: #C0C0C0">Red Capsicum,Baby Corn, Green
+  Capsicum,jalapeno & Black Olives</p>
+  <p><button>Add to Cart</button></p>
+</div>
+  </div>
+   <div class="column pizza">
+   <div class="content">
+  <img src="img/pizzaa3.jpg" alt="Denim Jeans" style="width:100%">
+  <h4>Veggie Italiano</h4>
+  <p class="price">$500</p>
+  <p style="color: #C0C0C0">Red Capsicum,Mushroom,jalapeno,
+  Green & yellow Zucchini, Black Olive</p>
+  <p><button>Add to Cart</button></p>
+</div>
+  </div>
+     <div class="column pizza">
+   <div class="content">
+  <img src="img/pizzaa3.jpg" alt="Denim Jeans" style="width:100%">
+  <h4>Veggie Italiano</h4>
+  <p class="price">$500</p>
+  <p style="color: #C0C0C0">Red Capsicum,Mushroom,jalapeno,
+  Green & yellow Zucchini, Black Olive</p>
+  <p><button>Add to Cart</button></p>
+</div>
+  </div>
+     <div class="column pizza">
+   <div class="content">
+  <img src="img/pizzaa4.jpg" alt="Denim Jeans" style="width:100%">
+  <h4>Veggie Supreme</h4>
+  <p class="price">$500</p>
+  <p style="color: #C0C0C0">Onion,Green capsicum,Mushroom,
+  Paprika, Black olive,Sweet Corn</p>
+  <p><button>Add to Cart</button></p>
+</div>
+  </div>
+  <div class="column chese ">
+    <div class="content">
+  <img src="img/pizzaa5.jpg" alt="Denim Jeans" style="width:100%">
+  <h4>Chicken Exotica</h4>
+  <p class="price">$629</p>
+  <p style="color: #C0C0C0">Smoked Chicken,Chicken Pepperoni,
+  Green And Yellow Zucchini,jalapeno</p>
+  <p><button>Add to Cart</button></p>
+</div>
+  </div>
+  <div class="column chese">
+    <div class="content">
+  <img src="img/pizzaa8.jpg" alt="Denim Jeans" style="width:100%">
+  <h4>Chicken Italiano</h4>
+  <p class="price">$629</p>
+  <p style="color: #C0C0C0">Chicken Pepperoni,
+  Mushroom,Green Capsicum,Black Olives</p>
+  <p><button>Add to Cart</button></p>
+</div>
+  </div>
+   <div class="column chese ">
+    <div class="content">
+  <img src="img/pizz7.jpg" alt="Denim Jeans" style="width:75%">
+  <h4>Chicken Supreme</h4>
+  <p class="price">$529</p>
+  <p style="color: #C0C0C0">Lebanese Chicken,Schezwan Chicken 
+  Meat Bail,Chicken Tikka</p>
+  <p><button>Add to Cart</button></p>
+</div>
+  </div>
+   <div class="column chese ">
+    <div class="content">
+  <img src="img/pizz5.jpg" alt="Denim Jeans" style="width:75%">
+  <h4>Triple Chicken Feast</h4>
+  <p class="price">$599</p>
+  <p style="color: #C0C0C0"> Schezwan Chicken Meat Ball,Lebanese
+  Chicken,Chicken Sausage,green</p>
+  <p><button>Add to Cart</button></p>
+</div>
+  </div>
+   <div class="column chicken ">
+    <div class="content">
+  <img src="img/chicken1.jpg" alt="Denim Jeans" style="width:100%">
+  <h4> Roasted Chicken Wings Peri-Peri</h4>
+  <p class="price">$119</p>
+  <p style="color: #C0C0C0">Smoked Chicken,Chicken Pepperoni,
+  Green And Yellow Zucchini,jalapeno</p>
+  <p><button>Add to Cart</button></p>
+</div>
+  </div>
+  <div class="column chicken">
+    <div class="content">
+  <img src="img/chicken2.jpg" alt="Denim Jeans" style="width:100%">
+  <h4>Roasted Chicken Wings-Classic</h4>
+  <p class="price">$119</p>
+  <p style="color: #C0C0C0">Crisp,Roasted Chicken Wings 
+  available in Classic Hot sauce</p>
+  <p><button>Add to Cart</button></p>
+</div>
+  </div>
+   <div class="column chicken ">
+    <div class="content">
+  <img src="img/chicken3.jpg" alt="Denim Jeans" style="width:100%">
+  <h4>Chicken Meatballs Peri-Peri</h4>
+  <p class="price">$109</p>
+  <p style="color: #C0C0C0">LTender,Juicy,Melt in Mouth Chicken
+  Meatballs in Peri peri Sauce</p>
+  <p><button>Add to Cart</button></p>
+</div>
+  </div>
+   <div class="column chicken ">
+    <div class="content">
+  <img src="img/chicken4.jpg" alt="Denim Jeans" style="width:100%">
+  <h4>Boneless Chicken wings Peri-Peri</h4>
+  <p class="price">$149</p>
+  <p style="color: #C0C0C0">Boneless Delight! Baked to Golden
+  Perfection with Peri Peri sauce</p>
+  <p><button>Add to Cart</button></p>
+</div>
+  </div>
+  <div class="column Drinks">
+    <div class="content">
+      <img src="img/beverages1.jpg" alt="Denim Jeans" style="width:100%">
+  <h4>Pepsi</h4>
+  <p class="price">$60</p><br>
+  <p style="color: #C0C0C0">Sparkling and Refreshing Beverage</p>
+  <p><button>Add to Cart</button></p>
+</div>
+  </div>
+  <div class="column Drinks">
+    <div class="content">
+  <img src="img/beverages2.jpg" alt="Denim Jeans" style="width:100%">
+  <h4>Bailley Premium Water(500ml)</h4>
+  <p class="price">$20</p><br>
+  <p style="color: #C0C0C0">Packaged Drinking water</p>
+  <p><button>Add to Cart</button></p>
+</div>
+  </div>
+  <div class="column Drinks">
+    <div class="content">
+  <img src="img/beverages3.jpg" alt="Denim Jeans" style="width:100%">
+  <h4>7 Up</h4>
+  <p class="price">$60</p><br>
+  <p style="color: #C0C0C0">Natural Lemon flavor</p>
+  <p><button>Add to Cart</button></p>
+</div>
+  </div>
+  <div class="column Drinks">
+    <div class="content">
+  <img src="img/beverages4.jpg" alt="Denim Jeans" style="width:100%">
+  <h4>Mirinda</h4>
+  <p class="price">$60</p><br>
+  <p style="color: #C0C0C0">Delicious Orange Flavoured beverage.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+  </div>
+    <div class="column Drinks">
+    <div class="content">
+  <img src="img/beverages5.jpg" alt="Denim Jeans" style="width:100%">
+  <h4>LIPTON ICE TEA</h4>
+  <p class="price">$50</p><br>
+  <p style="color: #C0C0C0">Naturally Refreshing,Not Too Sweet,
+  No Gas</p>
+  <p><button>Add to Cart</button></p>
+</div>
+  </div>
+ 
+<!-- END GRID -->
+</div>
+
+
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('header').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img\wall5.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required><br>
+        
+      <button type="submit" id="b2" style="margin-left: 80px;">Login</button><br> 
+
+    <label style="margin-left: 55px;">
+        <input type="checkbox" checked="checked" name="remember" > Remember me
+      </label><br>
+        <span class="psw" style="margin-left: 55px;">Forgot <a href="#">password?</a></span>
+    </div>
+
+    <div class="container1" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="margin-left: 22%">Cancel</button>
+       <button onclick="document.getElementById('id011').style.display='block'">Sign Up</button>
+      <!-- Button to open the modal -->
+    </div>
+  </form>
+</div>
+
+<!-- The Modal (contains the Sign Up form) -->
+<div id="id011" class="modal1">
+  <span onclick="document.getElementById('id011').style.display='none'" class="close" title="Close Modal">times;</span>
+  <form class="modal-content">
+    <div class="container11">
+      <h1 style="color: white;">Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email" style="margin-left: 30%"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required><br>
+
+      <label for="psw" style="margin-left: 21%"><b>Password</b></label>
+      <input type="password" placeholder="Password" name="psw" required><br>
+
+      <label for="psw-repeat" style="margin-left: 13%"><b>Re-Password</b></label>
+      <input type="password" placeholder="Re-Password" name="psw-repeat" required><br>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-left: 30%"> Remember me
+      </label><br>
+
+      <p style="margin-left: 15%">By creating an account you agree to our <br></p>
+      <a href="#" style="color:dodgerblue"><p style="margin-left: 30%">Terms & Privacy</p></a>
+
+      <div class="clearfix">
+       
+        <button type="button" onclick="document.getElementById('id011').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="button" onclick="document.getElementById('id011').style.display='none'" class="cancelbtn">Signup</button>
+
+      </div>
+    </div>
+  </form>
+</div>
+<footer class="footer-distributed">
+  <div class="footer-left">
+      <h3>PIZZA<span>MANIA</span></h3>
+        <p class="footer-links">
+          
+          <a href="#" style="padding-right: 10px">Blog </a>
+          |
+          <a href="piiza/inside.html" style="padding-right: 10px">About </a>
+          |
+          <a href="piiza/conact.html" style="padding-right: 10px">Contact </a>
+            
+        </p>
+      </div>
+</footer>
+
+<script type="text/javascript">filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+/*
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+*/
+
+/* Set the width of the sidebar to 250px (show it) */
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+/* Set the width of the sidebar to 0 (hide it) */
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+
+
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+} 
+
+// Get the modal
+var modal = document.getElementById('id011');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

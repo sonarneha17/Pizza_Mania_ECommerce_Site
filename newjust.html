@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?familysMontserrat:400,800">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<title></title>
+	<style type="text/css">
+		 *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  h1{
+    background-position: fixed;
+    background-color: rgb(120,0,20);
+    padding: 0px;
+    padding-bottom: 0px;
+
+  }
+   .header{
+      width: 100%;
+      height: 40px;
+      display: block;
+      background-color: rgb(120,0,20);
+  }
+  .innerheader{
+
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+ .logoco{
+    height: 100%;
+    display: table;
+    float: left;
+  }
+    .logoco h1{
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Buxton Sketch';
+    font-size: 32px;
+    font-weight: 400;
+
+  }
+  .logoco h1 span{
+    font-weight: 500;
+  }
+
+/*  .navigation{
+    float: right;
+    height: 100%;  
+  }
+  .navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+
+  }
+.navigation a:last-child{
+  padding-right: 0;
+}
+
+  .navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: 'Helvetica'
+    font-size:16px;
+  }
+
+*/
+* 
+{
+  box-sizing:border-box
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.container {
+  float: left;
+  padding: 16px;
+  padding:30px 70px 0px 40px;
+}
+
+#i1
+{
+  width: 220px;
+}
+
+.c1{
+	padding-top: 30px;
+}
+h2{
+	color: rgb(120,0,20);
+	font-size: 45px;
+	font-weight: 900;
+	font-family: 'arial black';
+	padding-bottom: 0px;
+}
+
+input[type=text] {
+  
+  width: 25%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-color: grey;
+}
+select {
+  width: 30%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+ .c1 a {
+ 	padding-top: 0px;
+ 	font-weight: 600;
+ 	font-family: 'arial';
+}
+label{
+	color: rgb(100,0,70);
+}
+.c6{
+	padding-left: 1100px;
+	padding-top: 20px;
+}
+.footer-distributed{
+  background-color: #2c292f;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 25px 50px 9px 10px;
+  margin-top: 80px;
+}
+.footer-distributed .footer-left{
+  width: 30%;
+   display: inline-block;
+  vertical-align: top;
+    width: 30%;
+}
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 0px 0 0px;
+}
+ 
+.footer-distributed .footer-links a{
+  font-family: 'arial';
+  display:inline-block;
+  line-height: 1.2;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 20px 'Cookie', cursive;
+  margin: 0;
+}
+ .footer-distributed h3 span{
+  color:  #e0ac1c;
+}
+
+img
+{
+  width: 100%;
+  height: 450px;
+  align-items: center;
+}
+
+.b1{
+  position: fixed;
+}
+
+.button{
+  left: 100px;
+  top: 100px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding-top: 0px;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin:  50px;
+  cursor: pointer;
+  width: 25%;
+}
+
+</style>
+</head>
+<body>
+	 
+   <div class="header">
+    <div class="innerheader">
+      <div class="logoco">
+        <h1>Pizza<span> Mania</span></h1>
+      </div>
+<!--     <a onclick="opentab()"><li>OUR MENU |    </li></a>
+         <a href="offer.html"> <li>SPECIAL OFFER |</li></a>
+         <a>                   <li>STORE FINDER | </li></a>
+         <a href="inside.html"><li>INSIDE MANIA | </li></a>
+         <a>                   <li>GIFT CARD |    </li></a>
+         <a href="conact.html"><li>CONTACT        </li></a>
+-->  </div>
+  </div>
+<img src="img/birthday.jpg">
+<div class="c1">
+<h2><center>BIRTHDAY PARTY</center></h2>
+<ul><a><li><center>For bookings and Information,Please fill the details below and submit or contact your nearest Mania's restaurant manager @ 1860-111-000</center></li></a></ul><br>
+
+   <div class="container">
+      <label for="bd"><b>Full Name</b></label><br>
+      <input type="text" placeholder="Name" name="uname" required id="i1"><br>
+      
+      <label for="bd"><b>Mobile no</b></label><br>
+      <input type="text" placeholder="Mobile" name="mb" required id="i1"><br>
+    </div>
+
+    <div class="container">
+      <label for="bd"><b>Alternate no</b></label><br>
+      <input type="text" placeholder="Alternate Number" name="psw" required id="i1"><br>
+
+      <label for="bd"><b>date of birth</b></label><br>
+      <select id="i1">
+      	<option>1</option>
+      	<option>2</option>
+      	<option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+      </select><br>
+    </div>
+     
+   <div class="container">
+      <label for="bd"><b>Addresss</b></label><br>
+      <input type="text" placeholder="Address" name="add" id="i1" required><br>
+
+      <label for="bd"><b>Restaurant Name</b></label><br>
+      <select id="i1">
+      	<option>Kaka Ka Restuarant</option>
+      	<option>Crown Palace</option>
+      	<option>A1 Arabian Restaurant</option>
+      </select><br>
+    </div> 
+
+    <div class="container">
+      <label for="bd"><b>City Name</b></label><br>
+      <input type="text" placeholder="City Name" name="city" id="i1" required><br>
+
+      <label for="bd"><b>Pincode</b></label><br>
+      <input type="text" placeholder="Pincode" name="pin" id="i1" required><br>    
+    </div>
+
+</div>
+
+  
+  <center><input type="submit" name="submit"></center>     
+<a><li><center><b>We will contact you within 2 working days.T&C Apply</center></li></a>
+
+<footer class="footer-distributed">
+  <div class="footer-left">
+      <h3>PIZZA<span>MANIA</span></h3>
+        <p class="footer-links">
+          
+          <a href="#" style="padding-right: 10px">Blog </a>
+          |
+          <a href="inside.html" style="padding-right: 10px">About </a>
+          |
+          <a href="conact.html" style="padding-right: 10px">Contact </a>
+          |
+          <a href="feedback.html" style="padding-right: 10px">Feedback</a> 
+        </p>
+  </div>
+</footer>
+</body>
+</html>
